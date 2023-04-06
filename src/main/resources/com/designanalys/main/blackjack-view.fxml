@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="304.0" prefWidth="427.0" spacing="20.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.designanalys.main.BlackjackController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox  alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <children>
+         <Label fx:id="houseCard1Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="houseCard2Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" border="black" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="houseCard3Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="houseCard4Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="houseCard5Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="houseCard6Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="houseCard7Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="houseCard8Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="houseCard9Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="houseCard10Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="houseCard11Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+      </children>
+   </HBox>
+   <GridPane prefHeight="179.0" prefWidth="387.0">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+      
+          <Label fx:id="playerPointsLabel" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: white;" text="Dina poäng: 0" GridPane.rowIndex="2">
+            <padding>
+               <Insets left="3.0" />
+            </padding></Label>
+         <Label fx:id="housePointsLabel" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: white;" text="Husets poäng: 0 ">
+            <padding>
+               <Insets left="4.0" />
+            </padding>
+            <GridPane.margin>
+               <Insets />
+            </GridPane.margin></Label>
+         <Button fx:id="dealButton" onAction="#dealCards" text="Dela ut kort" GridPane.rowIndex="1" />
+      </children>
+   </GridPane>
+   <HBox alignment="TOP_CENTER" prefHeight="0.0" prefWidth="387.0" spacing="40.0">
+      <children>
+          <Button fx:id="hitButton" onAction="#hit" prefHeight="25.0" prefWidth="43.0" text="Dra" visible="false" />
+         <Button fx:id="stayButton" onAction="#stay" prefHeight="25.0" prefWidth="59.0" text="Stanna" visible="false" />
+      </children>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </HBox>
+   <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <children>
+         <Label fx:id="playerCard1Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="playerCard2Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="playerCard3Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="playerCard4Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="playerCard5Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="playerCard6Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="playerCard7Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="playerCard8Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="playerCard9Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="playerCard10Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+         <Label fx:id="playerCard11Label" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" visible="false">
+            <padding>
+               <Insets left="1.0" />
+            </padding></Label>
+      </children>
+   </HBox>
+</VBox>

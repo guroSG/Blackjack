@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.designanalys.main.BlackjackController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label fx:id="startText" text="Välkommen till blackjack!" textFill="WHITE">
+      <font>
+         <Font size="24.0" />
+      </font></Label>
+   <Label prefHeight="195.0" prefWidth="198.0" text="Målet med spelet är att få en hand med ett totalt värde som är så nära 21 poäng som möjligt utan att överstiga det. Får man prick 21 poäng så vinner man. Du spelar nu mot huset, som enbart visar ett av sina 2 kort. Du kan välja att dra ett nytt kort eller att mäta dina kort mot datorns, varpå datorn kommer att dra kort för att försöka slå dina. Lycka till!" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+    <Button fx:id="startButton" onAction="#onStartButtonClick" text="Starta spel" />
+</VBox>
